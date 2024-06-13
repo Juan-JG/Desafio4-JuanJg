@@ -1,6 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+i {
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
 }
 main {
     display: flex;
@@ -8,18 +17,109 @@ main {
     width: 100%;
     height: 100vh;
 }
-.contenedor_mensajes {
+/***** Sección mensajes *****/
+/*** Contenedores ***/
+.contenedor_mensajeria {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 20%;
     height: 100%;
     background-color: white;
 }
+.contenedor_mensajeria div:last-of-type {
+    border: none;
+}
+/*** Contenedor usuario ***/
+.contenedor_usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor_estado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+.contenedor_estado img {
+    width: auto;
+    height: 100%;
+}
+.usuario_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+.usuario_nombre {
+    font-size: 16px;
+}
+.usuario_estado {
+    font-size: 12px;
+    color: #cccccc;
+}
+.contenedor_iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+}
+.contenedor_mensaje {
+    border-bottom: 2px solid #cccccc;
+    width: 100%;
+    height: 8.5%;
+    padding: 1rem;
+    overflow: hidden;
+}
+/*** Contenedor botón de nuevo chat ***/
+.contenedor_nuevochat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+.boton_nuevochat {
+    background-color: #afa0d5;
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 80%;
+    height: auto;
+    padding: 1rem ;
+}
+.boton_nuevochat:hover {
+    cursor: pointer;
+}
+/*** Sección logo ***/
 .contenedor_logo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
     background-color: #e9e9e9;
     border-left: 2px solid #cccccc;
+}
+.contenedor_logo img{
+    width: 20%;
+    height: auto;
+    padding: 1rem;
+}
+.texto_logo {
+    font-size: 50px;
+}
+.contenedor_logo span {
+    font-weight: bold;
 }
