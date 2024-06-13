@@ -1,162 +1,162 @@
 /***** Generales *****/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 i {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 i:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 img {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 main {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
 }
 /***** Sección mensajes - columna izquierda *****/
-/*** Contenedores ***/
+/*** Columna de mensajería ***/
 .contenedor_mensajeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    background-color: white;
-}
-.contenedor_mensajeria div:last-of-type {
-    border: none;
-}
-/*** Contenedor usuario ***/
-.contenedor_usuario {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 10%;
-}
-.contenedor_estado {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 1rem; 
-}
-.contenedor_estado img {
-    width: auto;
-    height: 100%;
-}
-.usuario_descripcion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.2rem;
-}
-.usuario_nombre {
-    font-size: 16px;
-}
-.usuario_estado {
-    font-size: 12px;
-    color: #cccccc;
-}
-.contenedor_iconos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  background-color: white;
 }
 .contenedor_mensaje {
     border-bottom: 2px solid #cccccc;
     width: 100%;
     height: 8.5%;
     padding-bottom: 3.5px;
+  }
+.contenedor_mensajeria div:last-of-type {
+  border: none;
 }
-/*** Contenedor botón de nuevo chat ***/
-.contenedor_nuevochat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 15%;
+/*** Usuario ***/
+.contenedor_usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10%;
 }
-.boton_nuevochat {
-    background-color: #afa0d5;
-    color: white;
-    border: none;
-    font-size: 16px;
-    width: 65%;
-    height: auto;
-    padding: 1rem ;
+.contenedor_estado {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
 }
-.boton_nuevochat:hover {
-    cursor: pointer;
-}
-/*** Contenedor mensajes recibidos ***/
-.contenedor_chat {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding-left: 10%;
-}
-.contenedor_chat img {
-    width: auto;
-    height: 100%;
+.contenedor_estado img {
+  width: auto;
+  height: 100%;
 }
 .usuario_descripcion {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
 .usuario_nombre {
-    font-size: 16px;
+  font-size: 16px;
+}
+.usuario_estado {
+  font-size: 12px;
+  color: #cccccc;
+}
+.contenedor_iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+}
+/*** Nuevo chat ***/
+.contenedor_nuevochat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+.boton_nuevochat {
+  background-color: #afa0d5;
+  color: white;
+  border: none;
+  font-size: 16px;
+  width: 65%;
+  height: auto;
+  padding: 1rem;
+}
+.boton_nuevochat:hover {
+  cursor: pointer;
+}
+/*** Chats ***/
+.contenedor_chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-left: 10%;
+}
+.contenedor_chat img {
+  width: auto;
+  height: 100%;
+}
+.usuario_descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+.usuario_nombre {
+  font-size: 16px;
 }
 .usuario_mensaje {
-    font-size: 14px;
-    font-weight: lighter;
+  font-size: 14px;
+  font-weight: lighter;
 }
 /***** Sección logo - columna derecha *****/
 .contenedor_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 100%;
-    background-color: #e9e9e9;
-    border-left: 2px solid #cccccc;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: #e9e9e9;
+  border-left: 2px solid #cccccc;
+  text-align: center;
 }
-.contenedor_logo img{
-    width: 20%;
-    height: auto;
-    padding: 1rem;
+.contenedor_logo img {
+  width: 20%;
+  height: auto;
+  padding: 1rem;
 }
 .texto_logo {
-    font-size: 50px;
+  font-size: 50px;
 }
 .contenedor_logo span {
-    font-weight: bold;
+  font-weight: bold;
 }
